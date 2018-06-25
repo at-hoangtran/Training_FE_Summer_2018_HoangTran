@@ -1,0 +1,360 @@
+* {
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "UTM Avo";
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.clr::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.container {
+  max-width: 1024px;
+  margin: 0 auto 0 auto;
+  width: 100%;
+}
+.header-top {
+  padding: 1% 0;
+  border-bottom: 1px solid #bbb;
+}
+.logo-header {
+  float: left;
+}
+.contact {
+  float: right;
+  top: 40%;
+  right: 0;
+}
+.contact img {
+  vertical-align: middle;
+}
+.title-header {
+  text-transform: uppercase;
+  float: right;
+  line-height: 1.5;
+  margin-top: 5%
+}
+.title-header h1 {
+  font-weight: bold;
+}
+.title-header span {
+  text-transform: none;
+}
+.question {
+  font-style: italic;
+  font-weight: bold;
+  line-height: 2;
+}
+.phone {
+  color: #4cc1fc;
+  font-weight: bold;
+}
+.contact p {
+  float: right;
+}
+.menu-items {
+  float: left;
+  list-style-type: none;
+  text-transform: uppercase;
+  text-align: center;
+  border-right: 1px solid #bbb;
+  padding: 1%;
+}
+.menu-items a{
+  color: #b0b0b0;
+  font-size: 80%;
+}
+.menu-items a:hover {
+  color: #62c6f8;
+}
+.toggle-menu {
+  display: none;
+}
+.social-items {
+  float: right;
+  list-style-type: none;
+  margin: 1% 1% 0 0;
+}
+.breadcrums {
+  background-image: url(../images/banner.png);
+  height: 160px;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin-bottom: 2%;
+  position: relative;
+  width: 100%;
+}
+.breadcrums li+li::before {
+  content: "/\00a0"
+}
+.breadcrums-list {
+  list-style-type: none;
+  position: absolute;
+  top: 40%;
+}
+.breadcrums-items {
+  float: left;
+}
+.sidebar-left {
+  width: 25%;
+  float: left;
+  padding-right: 1%;
+}
+.user-list {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+.user-items {
+  margin-bottom: 5%;
+  font-size: 80%;
+}
+.user-items h4 {
+  background-color: #d9e4e9;
+  padding: 5%;
+  margin: 0;
+}
+.sub-item {
+  float: right;
+  padding-right: 10%;
+}
+
+.adult-list {
+  background-color: white;
+  padding: 5% 0;
+}
+.adult-items {
+  line-height: 2;
+  text-transform: none;
+  margin-left: 10%;
+}
+.book-schedule {
+  padding: 10% 0;
+  background-color: #d9e4e9;
+}
+.book-schedule h2 {
+  text-transform: uppercase;
+  font-size: 100%;
+  margin: 0 5%;
+  font-weight: bold;
+}
+.book-schedule button {
+  background-color: green;
+  color: white;
+  text-transform: uppercase;
+  margin: 10% 30% 0;
+  padding: 3% 6%;
+  font-weight: bold;
+  text-align: center;
+  width: 30%;
+}
+.book-schedule input {
+  width: 80%;
+  margin: 5% 8%;
+  display: block;
+  height: 30px;
+}
+.main-content {
+  float: left;
+  width: 75%;
+}
+.services-list {
+  list-style-type: none;
+}
+.services-items {
+  float: left;
+  width: 33.333%;
+  padding: 0 1% 1% 1% ;
+  font-size: 90%;
+}
+.services-items h4 {
+  text-transform: uppercase;
+  font-family: arial;
+  font-weight: bold;
+  padding: 5%;
+}
+.services-items p {
+  font-size: 90%;
+  font-family: arial;
+  padding: 5%;
+}
+.services-image {
+  width: 100%;
+}
+.icon-detail {
+  float: right;
+  margin-top: 3%;
+}
+.page-footer {
+  background-color: #62c6f8;
+}
+.information-list {
+  color: white;
+  padding: 5% 0;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+.information-items {
+  float: left;
+  width: 25%;
+  margin-right: 5%;
+}
+.information-items h3 {
+  font-weight: bold;
+}
+.information-items a {
+  color: white;
+}
+.copyright {
+  color: white;
+  text-transform: uppercase;
+  padding: 1%;
+  border-top: 1px solid #bbb;
+}
+.design {
+  float: right;
+}
+.dd {
+  color: #86ffbf; 
+}
+.info-list {
+  padding: 0 5%;
+  font-size: 80%;
+}
+.info-items {
+  margin: 5%;
+  line-height: 1.5;
+}
+.soc-list {
+  list-style-type: none;
+  padding: 5%;
+}
+.soc-item {
+  margin: 5%;
+  line-height: 1.5;
+}
+.soc-items img {
+  vertical-align: middle;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 1023px){
+  .sidebar-left {
+    width: 30%;
+  }
+  .main-content {
+    width: 70%;
+  }
+  .services-items {
+    width: 50%;
+  }
+  .logo-header img {
+    width: 25%;
+  }
+} 
+@media only screen and (max-width: 767px){
+  .title-header {
+    font-size: 80%;
+  }
+  .question {
+    display: none;
+  }
+  .navigation {
+    position: relative;
+  }
+  .toggle-menu {
+    display: block;
+    position: absolute;
+    padding: 2%;
+    width: 33.3333%;
+    background-color: white;
+    color:black;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+  }
+  .page-menu {
+    display: none;
+    position: absolute;
+    background-color: #d9e4e9;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .main-menu:hover .page-menu {
+    display: block;
+  }
+  .main-menu:hover .toggle-menu {
+    background-color: #3e8e41;
+  }
+  .menu-items {
+    float: none;
+    padding: 3% 0;
+  }
+  .menu-items a {
+    color: black;
+  }
+  .menu-items a:hover {
+    color: #62c6f8;
+  }
+  .breadcrums {
+    height: 50px;
+  }
+  .information-list {
+    font-size: 75%;
+  }
+  .copyright {
+    font-size: 70%;
+  }
+  .book-schedule button {
+    font-size: 70%;
+  }
+}
+
+@media only screen and (max-width: 479px){
+  .logo-header img {
+    width: 20%;
+  }
+  .title-header {
+    font-size: 90%;
+  }
+  .contact {
+    font-size: 80%;
+  }
+  .sidebar-left {
+    width: 35%;
+  }
+  .main-content {
+    width: 65%;
+  }
+  .services-items {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 399px){
+  .sidebar-left {
+    width: 100%;
+  }
+  .main-content {
+    width: 100%;
+  }
+  .services-items {
+    padding: 5%;
+  }
+  .information-list {
+    width: 100%;
+    font-size: 100%;
+  }
+  .information-items {
+    width: 100%;
+  }
+}
+
